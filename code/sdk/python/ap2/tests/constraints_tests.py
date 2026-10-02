@@ -511,7 +511,7 @@ def _budget_violations(budget_max, currency, amount):
         (19.99, 'USD', 1999),
         # JPY has no minor unit: 1000 yen is 1000, not 100000.
         (1000.0, 'JPY', 1000),
-        # KWD has 3 decimal places: 10 dinars is 10000 fils.
+        # KWD has 3 decimal places: 10 KWD is 10000 minor units.
         (10.0, 'KWD', 10000),
         (1.0, 'CLF', 10000),
         # A fraction of a minor unit is rounded down, never up.
